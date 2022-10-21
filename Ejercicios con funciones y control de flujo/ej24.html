@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 24</title>
+</head>
+<body>
+    <script>
+        let money=50;
+        let num,apuesta,numAleatorio;
+
+        do{
+            num=parseInt(prompt("A que número del 1 al 6 deseas apostar"));
+            apuesta=parseInt(prompt("Introduce lo que quieres apostar"));
+            numAleatorio== parseInt(Math.random()*(6-1)+1);
+            
+
+            if(num==numAleatorio){
+                money+=apuesta;
+                alert(money);
+            }else{
+                money=money-apuesta;
+                alert(money);
+            }
+        }while(money>0 && money<200);
+        
+        if(money<=0){
+            alert("Has perdido");
+        }else if(money>=200){
+            alert("Has ganado");
+        }
+    </script>
+</body>
+</html>

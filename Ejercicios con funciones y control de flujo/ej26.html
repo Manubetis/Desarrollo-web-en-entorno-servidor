@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 26</title>
+</head>
+<body>
+    <form>
+        <h1>Ejercicio Sencillo 1 Arrays. Mayor, Menor y Media</h1>
+        <p>Introduce los enteros separados por comas</p>
+        <input type="text" id="cajaTexto">
+        <input type="button" value="Cargar Ejemplo" onclick="cargarEjemplo()">
+        <br>
+        <br>
+        <input type="button" value="Calcular" onclick="calculo()">
+        <input type="button" value="Reiniciar" onclick="reiniciar()">
+        <p id="comprobacion"></p>
+    </form>
+    <script>
+        let arrayEjemplo= [63,45,58,56];
+
+        function calculo(){
+            let cadena= document.getElementById("cajaTexto").value;
+
+            var arrayCadena= cadena.split(',');
+            let totalElementos=parseFloat(arrayCadena.length);
+            let sumaCadena=0;
+            let elMayor=0;
+            let elMenor=0;
+        
+
+            for(let i=0; i<arrayCadena.length; i++){
+                sumaCadena+=parseFloat(arrayCadena[i]);
+
+                if(arrayCadena[i]>elMayor){
+                    elMayor=arrayCadena[i];
+                }
+                if(elMenor==0){
+                    elMenor=arrayCadena[i];
+                }else{
+                    if(arrayCadena[i]<elMenor){
+                        elMenor=arrayCadena[i];
+                }
+                }
+            }
+            let media= sumaCadena/totalElementos;
+
+            document.getElementById("comprobacion").innerHTML+="<p>"+"La suma es: "+sumaCadena+" <br>"+"La media es: "+media+" <br>"+"El mayor es: "+
+                elMayor+" <br>"+"El menor es: "+elMenor+"</p>";
+
+            
+        }
+
+        function cargarEjemplo(){
+            let cadena= document.getElementById("cajaTexto");
+            cadena.value=arrayEjemplo;
+        }
+
+        function reiniciar(){
+            let cadena= document.getElementById("cajaTexto");
+            cadena.value=" ";
+            let parrafo= document.getElementById("comprobacion");
+            parrafo.innerHTML=" ";
+        }
+        
+
+    </script>
+</body>
+</html>

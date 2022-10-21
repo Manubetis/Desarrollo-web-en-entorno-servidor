@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Simplificado</title>
+</head>
+<body>
+    <form action="ej1.html">
+        <input id="primero" type="text">
+        <input id="segundo" type="text">
+        <input type="button" value="¿Quien es mayor?" onclick="quienMayor()">
+    </form>
+    <script>
+        function quienMayor(){
+            let primerNumero = document.getElementById("primero");
+            let segundoNumero = document.getElementById("segundo");
+
+            let message = (primerNumero.value>segundoNumero.value) ? primerNumero.value :
+                (primerNumero.value<segundoNumero.value) ? segundoNumero.value :
+                'Son iguales los números';
+
+            alert(message);
+        }
+    </script>
+</body>
+</html>

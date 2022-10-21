@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        let valor;
+
+        do{
+            valor=parseInt(prompt("Introduce un número entero positivo de hasta tres cifras"));
+
+            if(valor>=0 && valor<10){
+                alert("El número tiene una cífra");
+            }else if(valor>9 && valor<100){
+                alert("El número tiene dos cífras");
+            }else if(valor>99 && valor<1000){
+                alert("El número tiene tres cífras");
+            }
+        }while(valor<0 || valor>999);
+    </script>
+</body>
+</html>

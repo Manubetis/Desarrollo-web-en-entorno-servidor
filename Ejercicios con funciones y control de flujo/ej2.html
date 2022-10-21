@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <form action="ej2.html">
+        <input id="nombreIntroducido" type="text" placeholder="Inserta nombre...">
+        <input type="button" value="Insertar" onclick="insertar()">
+    </form>
+    <script>
+        function insertar(){
+            let nombre= document.getElementById("nombreIntroducido").value;
+            document.getElementById("insertarNombre").innerHTML+="<li> "+nombre+" </li>"
+        }
+    </script>
+    <p id="insertarNombre"></p>
+</body>
+</html>

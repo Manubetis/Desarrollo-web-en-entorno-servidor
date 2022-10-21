@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 27</title>
+</head>
+<body>
+    <form>
+        <div id="content">
+            <input type="text" id="texto" size="70" name="texto" value="">
+            <input type="button" id="boton" name="boton" value="Cuenta las letras">
+            <input type="button" id="boton2" name="boton" value="Borrar">
+          </div>
+        
+          <div id="resultado"></div>
+          <div id="resultado2"></div>
+          <div id="resultado3"></div>
+    </form>
+    <script>
+        window.onload = function(){
+
+        var boton = document.getElementById("boton");
+        boton.addEventListener("click", contar, false);
+
+        function contar(){
+
+            var textointro = introducido();
+
+            console.log(textointro);
+
+
+            document.getElementById('resultado').innerHTML = "Has escrito:" + "<br>" + textointro;
+
+
+            if (textoIntroducido === "" || !isNaN(textoIntroducido)) {
+                document.getElementById('resultado2').innerHTML = "Has introducido espacios en blanco o números, por favor escribe letras solamente"
+            }
+        }
+
+            var alfabeto = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","ñ","o","p","q","r","s","t","u","v","w","x","y","z"];
+            console.log(alfabeto);
+
+            var contador = 0;
+            var letraCantidad = new Array();
+
+
+        function introducido(){
+
+            textoIntroducido = document.getElementById("texto").value;
+
+
+            var introMinus = textoIntroducido.toLowerCase();
+            introMinus = introMinus.replace(/\s/g, "");
+            console.log(introMinus);
+
+            return textoIntroducido;
+        }
+
+
+        var boton2 = document.getElementById('boton2');
+        boton2.addEventListener("click", borrar, false);
+        function borrar() {
+        document.getElementById('texto').value = "";
+        }
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <form action="ej3.html">
+        <input name="inputRadio" type="radio" value="Opcion 1" check onclick="mostarOpcion()">Opcion 1<br/>
+        <input name="inputRadio" type="radio" value="Opcion 2" onclick="mostarOpcion()">Opcion 2<br/>
+        <input name="inputRadio" type="radio" value="Opcion 3" onclick="mostarOpcion()">Opcion 3<br/>
+    </form>
+    <script>
+        let opcion=document.getElementsByName("inputRadio");
+        console.log(opcion);
+
+        function mostarOpcion(){
+            for (let i=0; i < opcion.length; i++){
+                if(opcion[i].checked){
+                    alert(opcion[i].value);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

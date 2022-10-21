@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+<body>
+    <script>
+        let nombre= prompt("Introduce tu nombre: ");
+        let cantidadTotalPreguntas= prompt("Introduce la cantidad de preguntas: ");
+        let cantidadCorrectas= prompt("Introduce cuantas preguntas tienes corresctas");
+
+        let porcentaje= (cantidadCorrectas/cantidadTotalPreguntas)*100;
+        alert(porcentaje);
+
+        if(porcentaje>=90){
+            alert("Buenas "+nombre+" tienes un nivel superior.");
+        }else if(porcentaje>=75){
+            alert("Buenas "+nombre+" tienes un nivel medio.");
+        }else if(porcentaje>=50){
+            alert("Buenas "+nombre+" tienes un nivel bajo.");
+        }else if(porcentaje<50){
+            alert("Buenas "+nombre+" estas fuera del nivel requerido para aprobar esta prueba.");
+        }
+
+    </script>
+</body>
+</html>

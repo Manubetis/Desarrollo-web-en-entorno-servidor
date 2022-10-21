@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <script>
+        const diasXaño=365;
+        let nombre=prompt("Cual es tu nombre?");
+        let edad= prompt("Cual es tu edad?");
+
+        alert("Un Saludo "+nombre);
+        if(edad>=18){
+            alert("Eres mayor de edad");
+            alert("A lo largo de tu vida has vivido "+(diasXaño*edad)+" días");
+        }else if(edad<=0){
+            alert("No me mientas con tu edad hijo");
+        }else{
+            alert("Eres menor de edad");
+            alert("A lo largo de tu vida has vivido "+(diasXaño*edad)+" días");
+        }
+
+    </script>
+</body>
+</html>

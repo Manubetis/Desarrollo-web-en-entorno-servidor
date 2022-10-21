@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="cajaTexto">
+        <input type="button" onclick="dividirCadena()">
+    </form>
+    <script>
+        function dividirCadena(){
+            let numPalabras=0;
+            let primeraPalabra, ultimaPalabra;
+            let cadena=document.getElementById("cajaTexto").value;
+
+            var arrayCadena= cadena.split(" ");
+            console.log(arrayCadena);
+        
+            numPalabras=arrayCadena.length;
+            let primerNum=arrayCadena[0];
+            let ultimaNum=arrayCadena.length-1;
+
+            primeraPalabra=arrayCadena[primerNum];
+            ultimaPalabra=arrayCadena[ultimaNum];
+        }
+
+        
+    </script>
+</body>
+</html>

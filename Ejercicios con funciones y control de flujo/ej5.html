@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+        let nota1,nota2,nota3;
+        nota1= prompt("Introduce la primera nota");
+        nota2= prompt("Introduce la segundo nota");
+        nota3= prompt("Introduce la tercera nota");
+
+        let sumaNotas=((parseInt(nota1))+(parseInt(nota2))+(parseInt(nota3)));
+
+        if ((sumaNotas/3)<5){
+            alert("Repetidor");
+        }else if((sumaNotas/3)>=5 && (sumaNotas/3)<7){
+            alert("Superado");
+        }else{
+            alert("Promocionado");
+        }
+    </script>
+</body>
+</html>

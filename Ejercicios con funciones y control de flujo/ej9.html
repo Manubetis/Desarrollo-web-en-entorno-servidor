@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <script>
+        let valor;
+        do{
+            valor=parseInt(prompt("Introduce un número positivo de uno o dos dígitos"));
+
+            if(valor>=0 && valor<10){
+                alert("El número tiene una cífras");
+            }else if(valor>9 && valor<100){
+                alert("El número tiene dos cífra")
+            }
+
+        }while(valor<0 || valor>99);
+    </script>
+</body>
+</html>
