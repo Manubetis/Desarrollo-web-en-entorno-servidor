@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/ej4.js"></script>
+   
+</head>
+
+<body>
+    <form id="ej4">
+        <h3>EJERCICIO4</h3>
+        <m>Creal el siguiente formulario:</m>
+        <br>
+        <br>
+        <fieldset style="width: 380px;">
+            <m>Escribe la fecha de creación: </m>
+            <input type="text" id="fecha" required>
+            <br>
+            <br>
+            <m>Escribe el nombre del cocinero: </m>
+            <input type="text" id="name" required>
+            <br>
+            <br>
+            <m>Escribe el destinatario: </m>
+            <input type="text" id="destinatario" required>
+            <br>
+            <br>
+            <m>Escribe los gramos: </m>
+            <input type="number" id="gramos" min="100" max="5000" required>
+            <br>
+            <br>
+            <m>Escribe la composición: </m>
+            <input type="text" id="composicion" required>
+            <br>
+            <br>
+            <m>Escribe tu número de cuenta bancaria: </m>
+            <input type="text" id="cuenta">
+            <br>
+            <br>
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="button" id="recarg" onclick="recargar()">Recargar</button>
+        </fieldset>
+    </form>
+    <script src="API Web Storage/almaLocal.js"></script>
+</body>
+
+</html>

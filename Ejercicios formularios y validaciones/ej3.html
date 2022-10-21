@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script defer src="js/ej3.js"></script>
+</head>
+<body>
+    <form id="ej3">
+        <h3>EJERCICIO3</h3>
+        <m>Creal el siguiente formulario:</m>
+        <br>
+        <br>
+        <fieldset style="width: 380px;">
+            <m>Escribe tu dni: </m>
+            <input type="text" name="dni" id="dni" required>
+            <br>
+            <br>
+            <m>Escribe tu nombre: </m>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <br>
+            <m>Escribe tu fecha de nacimiento: </m>
+            <input type="text" name="fecha" id="fecha" required>
+            <br>
+            <br>
+            <m>Escribe tu email: </m>
+            <input type="email" name="email" id="email" placeholder="example@example.com" required>
+            <br>
+            <br>
+            <m>Web Personal: </m>
+            <input type="url" name="web" id="web" placeholder="https://example.com" required>
+            <br>
+            <br>
+            <m>Escribe tu contraseña: </m>
+            <input type="text" name="contra" id="contra">
+            <br>
+            <br>
+            <button type="submit" name="enviar" id="enviar">Enviar</button>
+            <button type="button" id="recarg" onclick="recargar()">Recargar</button>
+        </fieldset>
+    </form>
+    <script src="API Web Storage/almaSesion.js"></script>
+</body>
+</html>
